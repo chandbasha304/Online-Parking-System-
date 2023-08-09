@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parking Slot Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      background-image: url("https://res.cloudinary.com/yourmechanic/image/upload/dpr_auto,f_auto,q_auto/v1/article_images/Car_side_view_mirror");
+       background-size: cover;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    .option {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .bookings-section {
+      margin-top: 20px;
+    }
+
+    #bookingsList {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Parking Slot Booking</h1>
+    <div class="option">
+      <h2>Book Your Slot</h2>
+      <form action="bookslots" method="get" ><button>Book Now</button>
+</form>
+    </div>
+
+    <div class="bookings-section">
+      <div class="option">
+        <h2>Your Bookings</h2>
+        <form  action="bookings">
+        <button>View Bookings</button>
+        </form>
+      </div>
+      <ul id="bookingsList"></ul>
+    </div>
+  </div>
+</body>
+</html>
